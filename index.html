@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Hurricanes prediction</title>
+</head>
+
+
+<body>
+<div class="login">
+    <center>
+    <div class="banner">
+  
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Hurricanes prediction</h1>
+    </div>
+    <form action="{{ url_for('predict')}}" method="post">
+        <h1>LSTM ALGORITHM</h1>
+        <br><br>
+        <label for="T">T</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="T" placeholder="T" required="required" />
+        <br><br>
+        <label for="TM">TM</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="TM" placeholder="TM" required="required" />
+        <br><br>
+        <label for="Tm">Tm</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="Tm" placeholder="Tm" required="required" />
+        <br><br>
+        <label for="SLP">SLP</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="SLP" placeholder="SLP" required="required" />
+        <br><br>
+        <label for="H">H</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="H" placeholder="H" required="required" />
+        <br><br>
+        <label for="VV">VV</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="VV" placeholder="VV" required="required" />
+        <br><br>
+        <label for="V">V</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="V" placeholder="V" required="required" />
+        <br><br>
+        <label for="VM">VM</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="VM" placeholder="VM" required="required" />
+        <br><br>
+
+
+        <p style="text-align:center;"><input type="submit", value = "Submit" style="height:30px; width:70px;border-radius: 30px;"></p>
+        <br><br>
+
+
+ 
+        <!-- <p style="text-align:center;"><input type="submit", value = "L Submit" style="height:30px; width:70px"></p> -->
+    </form>
+
+    <br>
+    <br><br>
+</center>
+</div>
+
+</body>
+
+</html>
+
+<style type="text/css">
+
+.login {
+height: 720px;
+  width: 600px;
+  border: 1px solid green ;
+  background-color: #E9ECE9;
+  opacity: 0.75;
+  padding: 20px 50px;
+  border-radius: 150px;
+  
+}
+         body {
+                  width: 100vw;
+                  height: 100vh;
+                  display: flex;
+                  overflow: hidden;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  font-family: sans-serif;
+                  font-size: 16px;
+                  background-image: url(https://www.noaa.gov/sites/default/files/styles/landscape_width_1275/public/legacy/image/2019/Jun/PHOTO-eyewall2-hurricane-katrina%20-082805-700x438-original.jpg);
+                  background-position: center; /* Center the image */
+                  background-repeat: no-repeat; /* Do not repeat the image */
+                  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+  </style>
